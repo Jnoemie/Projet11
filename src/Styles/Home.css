@@ -1,0 +1,12 @@
+.content-cards {
+  background: #f7f7f7;
+  border-radius: 25px;
+  margin: auto;
+  margin-top:20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: space-between;
+  padding-left: 0px;
+  width: 95%;
+}

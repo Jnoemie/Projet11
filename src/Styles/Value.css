@@ -1,0 +1,60 @@
+
+
+.title-sectionValue {
+  background: #ff6060;
+  color: white;
+  margin-bottom: 0px;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-align: start;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  cursor:pointer;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  letter-spacing: 1px;
+  visibility: visible;
+  opacity: 1;
+  height: auto;
+  padding: 10px;
+  letter-spacing: 1px;
+  font-size: clamp(12px, 2vw, 16px);
+  color: #ff6060;
+  transition: visibility 0.5s ease-in-out, opacity 0.5s ease-in-out,
+    height 0.2s ease-in-out;
+    background-color: #f7f7f7;
+    border-radius: 0 0 10px 10px;
+}
+.contentHidden {
+  visibility: hidden;
+  opacity: 0;
+  height: 0;
+}
+.container-vector {
+  transform: rotate(180deg);
+  transition: all 0.3s ease-out;
+}
+
+.arrow {
+  transition: all 0.2s ease-in-out;
+}
+
+.arrow_up {
+  transform: rotate(0deg);
+  width: 20px;
+  height: 20px;
+  padding: 2px;
+}
+.arrow_down {
+  transform: rotate(180deg);
+  width: 20px;
+  height: 20px;
+  padding: 2px;
+}
