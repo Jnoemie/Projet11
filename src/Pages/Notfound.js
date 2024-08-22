@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import Header from "../Components/Header.js";
 import Footer from "../Components/Footer.js";
 
-import "../Styles/NotFound.css";
+import "../Styles/NotFound.scss";
 
 function NotFound() {
   return (

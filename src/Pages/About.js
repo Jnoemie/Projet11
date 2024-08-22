@@ -3,7 +3,7 @@ import BannerBis from "../Components/BannerBis.js";
 import Collapse from "../Components/Collapse.js";
 import Footer from "../Components/Footer.js";
 import { value } from "../Datas/value.js";
-import "../Styles/Appart.css";
+import "../Styles/Appart.scss";
 
 function About() {
   return (

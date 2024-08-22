@@ -1,4 +1,5 @@
-
+$transition-ease: ease-in-out;
+$transition-duration-short: 0.2s;
 
 .title-sectionValue {
   background: #ff6060;
@@ -42,19 +43,22 @@
   transition: all 0.3s ease-out;
 }
 
-.arrow {
-  transition: all 0.2s ease-in-out;
-}
 
-.arrow_up {
-  transform: rotate(0deg);
-  width: 20px;
-  height: 20px;
-  padding: 2px;
-}
-.arrow_down {
-  transform: rotate(180deg);
-  width: 20px;
-  height: 20px;
-  padding: 2px;
+// Arrow Styles
+.arrow {
+  transition: all $transition-duration-short $transition-ease;
+  
+  &.arrow_up {
+    transform: rotate(0deg);
+    width: 20px;
+    height: 20px;
+    padding: 2px;
+  }
+
+  &.arrow_down {
+    transform: rotate(180deg);
+    width: 20px;
+    height: 20px;
+    padding: 2px;
+  }
 }

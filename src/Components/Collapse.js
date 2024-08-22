@@ -1,4 +1,4 @@
-import "../Styles/Value.css";
+import "../Styles/Value.scss";
 import React, { useState } from "react";
 import vectorTop from "../Assets/vectorTop.png";
 

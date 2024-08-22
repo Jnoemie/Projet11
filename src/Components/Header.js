@@ -1,13 +1,13 @@
 import { Link } from "react-router-dom";
 import logo from "../Assets/logo.png";
 
-import "../Styles/Header.css";
+import "../Styles/Header.scss";
 
 function Header() {
   return (
     <div className="kasa-banner">
       <img
-        src={logo} // impot deu logo 
+        src={logo} // import du logo 
         alt="Kasa écrit en rouge avec une maison à la place du premier A"
         className="kasa-logo"
       />

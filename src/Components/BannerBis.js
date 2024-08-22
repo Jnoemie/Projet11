@@ -1,5 +1,5 @@
 import bannerAbout from "../Assets/bannerAbout.png";
-import "../Styles/Banner.css";
+import "../Styles/Banner.scss";
 
 function BannerBis() { // import de la banniére pour a propos 
   return (

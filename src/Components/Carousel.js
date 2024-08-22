@@ -1,4 +1,4 @@
-import "../Styles/Carousel.css";
+import "../Styles/Carousel.scss";
 import VectorRight from "../Assets/vectorright.png";
 import VectorLeft from "../Assets/vectorleft.png";
 import { useState } from "react";
@@ -9,6 +9,7 @@ function Carousel({ imageSlider }) {
 
   const nextSlide = () => {
     setCurrentIndex(
+      
       currentIndex === imageSlider.length - 1 ? 0 : currentIndex + 1
     ); // on repart au premier slide quand on arrive au dernier
   };
@@ -37,7 +38,7 @@ function Carousel({ imageSlider }) {
         />
       )}
       
-      {imageSlider.map((slide, index) => (// pour chaque image de la liste une div est creee 
+      {imageSlider.map((slide, index) => (// pour chaque image de la liste une div est crée
         <div
           key={index} 
           className={
@@ -47,7 +48,7 @@ function Carousel({ imageSlider }) {
           }
         >
           {index === currentIndex && (
-            <img src={slide} alt="appartement à louer" />// affiche l'mage 
+            <img src={slide} alt="appartement à louer" />// affiche l'image 
           )}
           {index === currentIndex && (// affichage de l'index
             <span className="slideCount">

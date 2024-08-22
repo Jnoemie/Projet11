@@ -1,4 +1,4 @@
-import "../Styles/Appart.css";
+import "../Styles/Appart.scss";
 import { useEffect, useState } from "react"; //import des fonction react pour gerer l'etat et l'effet de la page
 import { useParams } from "react-router-dom";// import d'une fonction react pour recuperer les parametre de l'url 
 import list from "../Datas/List"; // import des données 
@@ -34,7 +34,7 @@ function AppartDes() {
             <p>{dataAppart[0].location}</p>
             <div>
               {dataAppart[0].tags.map((tag, index) => {
-                return <button key={index}>{tag}</button>;
+                return <button key={index}>{tag}</button>;// affiche le tag de l'appartement 
               })}
             </div>
           </div>
@@ -45,14 +45,14 @@ function AppartDes() {
                 <span>{name[1]}</span>
               </div>
               <img
-                src={dataAppart[0].host.picture}
+                src={dataAppart[0].host.picture}// photo proprietaire 
                 alt="host of this accomodation"
               />
             </div>
 
             <div className="hoststars">
               {[...Array(5)].map((star, index) => {
-                const ratingValue = index + 1;
+                const ratingValue = index + 1;// generation des etoiles en fonction des notes 
                 return (
                   <img
                     key={index}

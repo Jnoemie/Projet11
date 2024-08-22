@@ -1,0 +1,50 @@
+// Variables
+$padding-banner: 30px;
+$margin-bottom-banner: 30px;
+$link-color: #ff6060;
+$mobile-width: 650px;
+$logo-width-mobile: 110px;
+$logo-height-mobile: 70px;
+$menu-margin: 10px;
+$font-weight-mobile: 500;
+
+// Banner Styles
+.kasa-banner {
+  padding: $padding-banner;
+  margin-bottom: $margin-bottom-banner;
+  display: flex;
+  justify-content: space-between;
+}
+
+// Menu Puce Styles
+.menuPuce {
+  display: inline;
+  list-style: none;
+  margin: $menu-margin;
+
+  > a {
+    color: $link-color;
+    text-decoration: none;
+
+    &:hover {
+      color: $link-color;
+      text-decoration: underline;
+    }
+  }
+}
+
+// Media Queries
+@media screen and (max-width: $mobile-width) {
+  .kasa-logo {
+    width: $logo-width-mobile;
+    height: $logo-height-mobile;
+  }
+
+  .menuNav {
+    display: flex;
+  }
+
+  .menuPuce {
+    font-weight: $font-weight-mobile;
+  }
+}

@@ -1,5 +1,5 @@
 import banner from "../Assets/banner.png";
-import "../Styles/Banner.css";
+import "../Styles/Banner.scss";
 
 function Banner() { // import de l'image de banniére
   return (

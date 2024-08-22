@@ -1,7 +1,7 @@
 import Header from "../Components/Header.js";
 import AppartDes from "../Components/AppartDes.js";
 import Footer from "../Components/Footer.js";
-import "../Styles/Appart.css";
+import "../Styles/Appart.scss";
 
 function Appart() {
   return (

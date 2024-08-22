@@ -1,0 +1,117 @@
+// Variables
+$carousel-height: 350px;
+$carousel-margin: 2% 0;
+$slide-background: rgba(0, 0, 0, 0.3);
+$white-color: #FFFFFF;
+$active-opacity: 1;
+$text-color: #ffffff;
+$font-size: 18px;
+$vector-width: 12px;
+$vector-height: 20px;
+$z-index: 10;
+$border-radius: 10px;
+$border-radius-mobile: 20px;
+$vector-size-mobile: 30px;
+$vector-height-mobile: 40px;
+
+// Carousel Styles
+#carousel {
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: $carousel-height;
+  margin: $carousel-margin;
+  overflow: hidden;
+
+  // Slide Styles
+  .slide {
+    background: $white-color;
+    mix-blend-mode: darken;
+    border-radius: $border-radius;
+    position: absolute;
+    top: 0%;
+    bottom: 0%;
+    left: 0%;
+    right: 0%;
+    opacity: 0;
+    height: 100%;
+    width: 100%;
+
+    // Image Styles
+    img {
+      object-fit: cover;
+      position: absolute;
+      top: 0%;
+      bottom: 0%;
+      left: 0%;
+      right: 0%;
+      mix-blend-mode: normal;
+      border-radius: $border-radius;
+      height: 100%;
+      width: 97%;
+      margin: auto;
+    }
+  }
+
+  // Slide Count Styles
+  .slideCount {
+    display: block;
+    position: absolute;
+    color: $text-color;
+    left: 48%;
+    top: 86%;
+    font-size: $font-size;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 142.6%;
+  }
+
+  // Active Slide
+  .active {
+    opacity: $active-opacity;
+  }
+
+  // Navigation Vectors
+  .VectorRight,
+  .VectorLeft {
+    display: flex;
+    position: absolute;
+    top: 47%;
+    width: $vector-width;
+    height: $vector-height;
+    z-index: $z-index;
+    cursor: pointer;
+  }
+
+  .VectorRight {
+    right: 2%;
+  }
+
+  .VectorLeft {
+    left: 2%;
+  }
+
+  // Media Queries
+  @media screen and (max-width: 650px) {
+    height: 410px;
+    margin: 20px auto;
+
+    .slide {
+      border-radius: $border-radius-mobile;
+    }
+
+    .VectorLeft,
+    .VectorRight {
+      width: $vector-size-mobile;
+      height: $vector-height-mobile;
+    }
+
+    .VectorLeft {
+      top: 42%;
+    }
+
+    .VectorRight {
+      top: 45%;
+    }
+  }
+}

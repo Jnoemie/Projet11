@@ -1,0 +1,149 @@
+// Variables
+$primary-color: #ff6060;
+$secondary-bg-color: #F7F7F7;
+$white-color: #fff;
+$gap-small: 10px;
+$gap-large: 30px;
+$border-radius: 30px;
+
+// Global styles
+button {
+  display: inline;
+  padding: 5px 15px;
+  margin-right: 10px;
+  cursor: pointer;
+  border-radius: 10px;
+  border: none;
+  color: $white-color;
+  background-color: $primary-color;
+
+  &:hover {
+    box-shadow: 0 2px 8px rgb(0, 0, 0);
+  }
+}
+
+p {
+  margin: 0;
+}
+
+h3 {
+  margin: 0;
+}
+
+// Appart Content
+.AppartContent {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  color: $primary-color;
+  width: 95%;
+  margin: 0 auto;
+
+  div {
+    display: flex;
+    flex-wrap: wrap;
+    gap: $gap-small;
+  }
+}
+
+// Appart Infos
+.AppartInfos {
+  display: flex;
+  flex-direction: column;
+  gap: $gap-small;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+// Host
+.host {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+
+  img {
+    width: 64px;
+    height: 64px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+  }
+
+  div {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    gap: 0 $gap-small;
+  }
+
+  .hostName {
+    align-self: center;
+    flex-direction: column;
+  }
+
+  .hoststars {
+    display: flex;
+    gap: $gap-small;
+
+    img {
+      width: 30px;
+      height: 30px;
+    }
+  }
+}
+
+// About Main Section
+.about_main {
+  margin: 20px 200px;
+  display: flex;
+  flex-direction: column;
+  gap: $gap-large;
+}
+
+// Appart Value
+.AppartValue {
+  display: flex;
+  justify-content: space-between;
+  gap: 70px;
+  margin: 30px auto;
+  width: 95%;
+
+  .ValueItem {
+    width: 50%;
+    background: $secondary-bg-color;
+    height: 100%;
+    border-radius: $border-radius;
+    text-align: start;
+  }
+}
+
+// Media Queries
+@media screen and (max-width: 650px) {
+  .AppartContent {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: $gap-small;
+  }
+
+  .host {
+    width: 100%;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .AppartValue {
+    flex-direction: column;
+    gap: $gap-large;
+  }
+
+  .ValueItem {
+    width: 100%;
+  }
+
+  .about_main {
+    margin: 20px 20px;
+  }
+}

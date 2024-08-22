@@ -1,0 +1,55 @@
+// Variables
+$border-radius: 25px;
+$banner-font-size: 60px;
+$banner-font-size-mobile: 30px;
+$white-color: white;
+$brightness: 60%;
+$mobile-width: 700px;
+$banner-width: 95%;
+$banner-top-position: 210px;
+$banner-top-position-mobile: 225px;
+
+// Container Banner
+.container-banner {
+  overflow: hidden;
+  border-radius: $border-radius;
+  margin: auto;
+
+  // Image within banner
+  img {
+    width: 100%;
+  }
+
+  // Media queries for mobile responsiveness
+  @media screen and (max-width: $mobile-width) {
+    height: $banner-top-position;
+
+    img {
+      object-fit: cover;
+      height: 100%;
+    }
+  }
+}
+
+// Banner Styles
+.banner {
+  filter: brightness($brightness);
+  border-radius: $border-radius;
+  width: $banner-width;
+}
+
+// Banner Text
+.banner-txt {
+  font-size: $banner-font-size;
+  position: absolute;
+  color: $white-color;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  top: $banner-top-position;
+
+  @media screen and (max-width: $mobile-width) {
+    font-size: $banner-font-size-mobile;
+    top: $banner-top-position-mobile;
+  }
+}
