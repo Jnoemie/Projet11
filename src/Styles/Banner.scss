@@ -6,27 +6,59 @@ $white-color: white;
 $brightness: 60%;
 $mobile-width: 700px;
 $banner-width: 95%;
-$banner-top-position: 210px;
+$banner-top-position: 130px;
 $banner-top-position-mobile: 225px;
 
 // Container Banner
 .container-banner {
-  overflow: hidden;
-  border-radius: $border-radius;
-  margin: auto;
+  display: flex;
+    height: 223px;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    margin:auto;
+    width: 90%;
+  
 
   // Image within banner
   img {
+    position: absolute;
+    height: 223px;
     width: 100%;
+    object-fit: cover;
+    border-radius: 25px;
+    filter : brightness(70%);
   }
+  .banner-txt{ 
+    display: flex;
+    z-index: 2;
+    
+    color: white;
+    
+    font-size: 3em;
+    text-align: center;
+  position: absolute;
+  font-weight: 500;
+}
 
   // Media queries for mobile responsiveness
   @media screen and (max-width: $mobile-width) {
     height: $banner-top-position;
+   
 
     img {
       object-fit: cover;
       height: 100%;
+      
+      
+    }
+
+    .banner-txt{
+margin-top: -5px;
+margin-left:7px;
+font-size:27px;
+text-align: initial;
+font-weight: initial;
     }
   }
 }
@@ -38,18 +70,3 @@ $banner-top-position-mobile: 225px;
   width: $banner-width;
 }
 
-// Banner Text
-.banner-txt {
-  font-size: $banner-font-size;
-  position: absolute;
-  color: $white-color;
-  right: 0;
-  left: 0;
-  bottom: 0;
-  top: $banner-top-position;
-
-  @media screen and (max-width: $mobile-width) {
-    font-size: $banner-font-size-mobile;
-    top: $banner-top-position-mobile;
-  }
-}

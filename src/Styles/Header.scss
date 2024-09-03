@@ -1,19 +1,20 @@
 // Variables
 $padding-banner: 30px;
 $margin-bottom-banner: 30px;
-$link-color: #ff6060;
+$link-color: black ;
 $mobile-width: 650px;
-$logo-width-mobile: 110px;
-$logo-height-mobile: 70px;
+$logo-width-mobile: 140px;
+$logo-height-mobile: 60px;
 $menu-margin: 10px;
 $font-weight-mobile: 500;
 
 // Banner Styles
 .kasa-banner {
   padding: $padding-banner;
-  margin-bottom: $margin-bottom-banner;
+  margin: auto;
   display: flex;
   justify-content: space-between;
+  width: 90%;
 }
 
 // Menu Puce Styles
@@ -30,6 +31,11 @@ $font-weight-mobile: 500;
       color: $link-color;
       text-decoration: underline;
     }
+
+    &.active {
+      text-decoration: underline;
+      font-weight: bold; // Optionnel : pour un style plus distinct
+    }
   }
 }
 
@@ -38,13 +44,19 @@ $font-weight-mobile: 500;
   .kasa-logo {
     width: $logo-width-mobile;
     height: $logo-height-mobile;
+    padding-top: 10px;
   }
 
   .menuNav {
     display: flex;
   }
+.kasa-banner{
+  margin-bottom: 0;
+  padding:18px;
 
+}
   .menuPuce {
     font-weight: $font-weight-mobile;
+    font-weight: 200;
   }
 }

@@ -11,8 +11,8 @@ $vector-height: 20px;
 $z-index: 10;
 $border-radius: 10px;
 $border-radius-mobile: 20px;
-$vector-size-mobile: 30px;
-$vector-height-mobile: 40px;
+$vector-size-mobile:15px;
+$vector-height-mobile: 24px;
 
 // Carousel Styles
 #carousel {
@@ -84,20 +84,25 @@ $vector-height-mobile: 40px;
   }
 
   .VectorRight {
-    right: 2%;
+    right: 3%;
   }
 
   .VectorLeft {
-    left: 2%;
+    left: 3%;
   }
 
   // Media Queries
   @media screen and (max-width: 650px) {
-    height: 410px;
-    margin: 20px auto;
+    height: 295px;
+    margin:  auto;
+    width: 95%;
+    margin-bottom: 10px;
 
     .slide {
       border-radius: $border-radius-mobile;
+    }
+    .slideCount{
+      display: none;
     }
 
     .VectorLeft,

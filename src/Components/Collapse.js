@@ -11,7 +11,7 @@ function Collapse({ title, content }) { //prise en compte de  title et content
         <h3 className="title-sectionValue" onClick={() => setToggle(!toggle)}> 
           {title} 
           <img
-            className={toggle ? "arrow arrow_up" : "arrow arrow_down"}
+            className={toggle ? "arrow arrow_down" : "arrow arrow_up"}
             src={vectorTop}
             alt="show content"
           />

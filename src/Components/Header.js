@@ -1,9 +1,11 @@
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import logo from "../Assets/logo.png";
 
 import "../Styles/Header.scss";
 
 function Header() {
+  const location = useLocation();
+
   return (
     <div className="kasa-banner">
       <img
@@ -13,12 +15,17 @@ function Header() {
       />
       <ul className="menuNav">
         <li className="menuPuce">
-          {" "}
-          <Link to="/">Accueil</Link>{" "}
+          <Link to="/" className={location.pathname === "/" ? "active" : ""}>
+            Accueil
+          </Link>
         </li>
         <li className="menuPuce">
-          {" "}
-          <Link to="/About">A Propos</Link>{" "}
+          <Link
+            to="/About"
+            className={location.pathname === "/About" ? "active" : ""}
+          >
+            A Propos
+          </Link>
         </li>
       </ul>
     </div>

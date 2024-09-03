@@ -3,43 +3,41 @@ $card-width: 300px;
 $card-height: 300px;
 $card-radius: 15px;
 $card-margin: 30px;
-$primary-gradient-start: rgba(147, 55, 70, 1);
-$primary-gradient-end: rgba(255, 96, 96, 1);
-$text-color: white;
 
+$text-color: white;
+$mobile-width: 700px;
 // Card Styles
 .card {
-  width: $card-width;
-  height: $card-height;
-  background: linear-gradient(
-    0deg,
-    $primary-gradient-start 0%,
-    $primary-gradient-end 96%
-  );
-  border-radius: $card-radius;
-  margin: $card-margin;
-  color: $text-color;
-  overflow: hidden;
-
-  &:hover .img-loc {
-    height: 0%;
-  }
+  display: flex;
+  height: 400px;
+  width: 31%;
+position:relative;
+@media screen and (max-width: $mobile-width) {
+width: 98%;
+height: 300px;
 }
-
-// Anchor Styles
-a {
-  text-decoration: none;
 }
-
 // Title Location Styles
-.title-loc {
-  margin: 150px 130px 0 10px;
-  color: $text-color;
+.title-loc{
+  position: absolute;
+  width: 150px;
+  margin-top:305px ;
+ margin-left: 5px;
+  color: white;
+  @media screen and (max-width: $mobile-width) {
+    margin-top: 201px;
 }
-
+}
 // Image Location Styles
 .img-loc {
-  height: 100%;
-  position: relative;
-  overflow: hidden;
+  display: flex;
+    
+    width: 100%;
+    background-image: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%), var(--img);
+    background-size: cover;
+    border-radius: 15px;
+}
+.content-cards{
+  width: 90%;
+  margin:auto;
 }

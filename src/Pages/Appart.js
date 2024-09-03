@@ -7,7 +7,7 @@ function Appart() {
   return (
     <div>
       <Header />
-      <main>
+      <main className="appartDes">
         <AppartDes />
       </main>
       <Footer />
