@@ -1,6 +1,6 @@
 // Variables
 $carousel-height: 350px;
-$carousel-margin: 2% 0;
+$carousel-margin: auto;
 $slide-background: rgba(0, 0, 0, 0.3);
 $white-color: #FFFFFF;
 $active-opacity: 1;
@@ -18,7 +18,7 @@ $vector-height-mobile: 24px;
 #carousel {
   display: flex;
   position: relative;
-  width: 100%;
+  width: 89%;
   height: $carousel-height;
   margin: $carousel-margin;
   overflow: hidden;
