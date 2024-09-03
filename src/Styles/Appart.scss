@@ -135,7 +135,7 @@ h3 {
     justify-content: space-between;
     align-items: flex-start;
     gap: $gap-small;
-    width: 95%;
+    width: 97%;
   }
 
   .host {
@@ -143,6 +143,7 @@ h3 {
     flex-direction: row-reverse;
     justify-content: space-between;
     align-items: center;
+    gap:16px;
 
     img{
       width: 50px;
@@ -168,6 +169,7 @@ main{
   }
   .AppartInfos {
     display: flex;
+    text-align: initial;
     h1{
       
       margin: 0; 
