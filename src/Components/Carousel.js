@@ -42,9 +42,12 @@ function Carousel({ imageSlider }) {
           style={{ display: currentIndex === index ? 'block' : 'none' }} // Afficher uniquement le slide actif
         >
           <img src={slide} alt={`Appartement à louer - Vue ${currentIndex + 1}`} />
-          <span className="slideCount">
-            {currentIndex + 1} / {imageSlider.length}
-          </span>
+          
+          {imageSlider.length > 1 && (// affichage que lorsque qu'il y a plus d'une image 
+            <span className="slideCount">
+              {currentIndex + 1} / {imageSlider.length}
+            </span>
+          )}
         </div>
       ))}
     </section>
